@@ -1,0 +1,254 @@
+{
+    "tagline":{
+        "welcome": "Connexion transparente pour un accès exclusif",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum, culpa, magni dolorum necessitatibus vel vitae esse soluta aspernatur laudantium odit ad veritatis. Sint, mollitia!."
+    },
+    "toast": {
+        "successCreate": "Élément créé avec succès !",
+        "successUpdate": "Élément mis à jour avec succès !",
+        "successDelete": "Élément supprimé avec succès !",
+        "errorCreate": "Échec de la création de l'élément. Veuillez réessayer plus tard.",
+        "errorUpdate": "Échec de la mise à jour de l'élément. Veuillez réessayer plus tard.",
+        "errorDelete": "Échec de la suppression de l'élément. Veuillez réessayer plus tard.",
+        "errorLoad": "Échec du chargement des données. Veuillez réessayer plus tard.",
+        "networkError": "Erreur réseau. Veuillez vérifier votre connexion.",
+        "actionSuccess": "Action effectuée avec succès !",
+        "actionFailure": "Échec de l'action. Veuillez réessayer plus tard."
+    },
+    "dialog": {
+        "deleteConfirmation": "Êtes-vous sûr de vouloir supprimer cet élément ?",
+        "unsavedChanges": "Vous avez des modifications non enregistrées. Voulez-vous quitter cette page ?",
+        "logoutConfirmation": "Êtes-vous sûr de vouloir vous déconnecter ?",
+        "genericWarning": "Êtes-vous sûr de vouloir continuer cette action ?",
+        "saveChanges": "Voulez-vous enregistrer vos modifications avant de quitter ?",
+        "overwriteWarning": "Cette action écrasera les données existantes. Voulez-vous continuer ?"
+    },
+    "auth": {
+        "loginSuccess": "Connexion réussie !",
+        "loginFailure": "Échec de la connexion. Veuillez vérifier vos identifiants et réessayer.",
+        "logoutSuccess": "Déconnexion réussie !",
+        "signupSuccess": "Compte créé avec succès !",
+        "signupFailure": "Échec de la création du compte. Veuillez réessayer plus tard.",
+        "passwordResetSuccess": "Réinitialisation du mot de passe réussie !",
+        "passwordResetFailure": "Échec de la réinitialisation du mot de passe. Veuillez réessayer plus tard.",
+        "unauthorizedAccess": "Vous n'êtes pas autorisé à accéder à cette ressource.",
+        "sessionExpired": "Votre session a expiré. Veuillez vous reconnecter.",
+        "accountLocked": "Votre compte est verrouillé. Veuillez contacter le support."
+    },
+    "form": {
+        "fieldRequired": "Ce champ est obligatoire.",
+        "invalidEmail": "Veuillez saisir une adresse e-mail valide.",
+        "passwordMismatch": "Les mots de passe ne correspondent pas.",
+        "minLength": "Ce champ doit contenir au moins {min} caractères.",
+        "maxLength": "Ce champ peut contenir jusqu'à {max} caractères.",
+        "submitSuccess": "Formulaire soumis avec succès !",
+        "submitFailure": "Échec de l'envoi du formulaire. Veuillez réessayer."
+    },
+    "file": {
+        "uploadSuccess": "Fichier téléchargé avec succès !",
+        "uploadFailure": "Échec du téléchargement du fichier. Veuillez réessayer.",
+        "invalidFileType": "Type de fichier invalide. Veuillez télécharger un fichier valide.",
+        "fileTooLarge": "La taille du fichier dépasse la limite maximale.",
+        "deleteFileConfirmation": "Êtes-vous sûr de vouloir supprimer ce fichier ?"
+    },
+    "notification": {
+        "newMessage": "Vous avez un nouveau message.",
+        "updateAvailable": "Une nouvelle mise à jour est disponible. Veuillez actualiser la page.",
+        "maintenance": "Le système est en maintenance. Veuillez réessayer plus tard.",
+        "actionRequired": "Action requise : {action}",
+        "reminder": "Rappel : {task}"
+    },
+    "error": {
+        "404": "La ressource demandée est introuvable.",
+        "500": "Une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
+        "timeout": "La requête a expiré. Veuillez réessayer plus tard.",
+        "generic": "Une erreur est survenue. Veuillez réessayer.",
+        "validation": "Certains champs sont invalides. Veuillez vérifier et réessayer."
+    },
+    "buttons": {
+        "ok": "OK",
+        "cancel": "Annuler",
+        "yes": "Oui",
+        "no": "Non",
+        "confirm": "Confirmer",
+        "submit": "Soumettre",
+        "save": "Enregistrer",
+        "delete": "Supprimer",
+        "upload": "Téléverser",
+        "close": "Fermer",
+        "logout": "Déconnexion",
+        "login": "Connexion",
+        "signup": "Inscription",
+        "reset": "Réinitialiser",
+        "back": "Retour",
+        "next": "Suivant",
+        "finish": "Terminer",
+        "inviteUsers": "Inviter des utilisateurs"
+    },
+    "menu": {
+        "home": "Accueil",
+        "dashboard": "Tableau de bord",
+        "settings": "Paramètres",
+        "profile": "Profil",
+        "users": "Utilisateurs",
+        "roles": "Rôles",
+        "permissions": "Autorisations",
+        "logout": "Déconnexion"
+    },
+    "pages": {
+        "home": "Accueil",
+        "dashboard": "Tableau de bord",
+        "settings": "Paramètres",
+        "profile": "Profil",
+        "users": "Utilisateurs",
+        "roles": "Rôles",
+        "permissions": "Autorisations"
+    },
+    "profile": {
+        "title": "Profil",
+        "name": "Nom",
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "confirmPassword": "Confirmer le mot de passe",
+        "updateProfile": "Mettre à jour le profil",
+        "changePassword": "Changer le mot de passe"
+    },
+    "users": {
+        "title": "Utilisateurs",
+        "addUser": "Ajouter un utilisateur",
+        "editUser": "Modifier un utilisateur",
+        "deleteUser": "Supprimer un utilisateur",
+        "viewUser": "Voir un utilisateur",
+        "firstName": "Prénom",
+        "lastName": "Nom de famille",
+        "contactNumber": "Numéro de contact",
+        "accountName": "Nom du compte",
+        "email": "E-mail",
+        "role": "Rôle",
+        "status": "Statut",
+        "active": "Actif",
+        "inactive": "Inactif",
+        "actions": "Actions",
+        "verified": "Vérifié",
+        "lastLogin": "Dernière connexion",
+        "lastUpdated": "Dernière mise à jour",
+        "createdOn": "Créé le",
+        "verifiedOn": "Vérifié le",
+        "inviteUsers": "Inviter des utilisateurs",
+        "dateInvited": "Date d'invitation",
+        "personalInfo": "Informations personnelles"
+    },
+    "roles": {
+        "title": "Rôles",
+        "addRole": "Ajouter un rôle",
+        "editRole": "Modifier un rôle",
+        "deleteRole": "Supprimer un rôle",
+        "viewRole": "Voir un rôle",
+        "name": "Nom",
+        "permissions": "Autorisations",
+        "actions": "Actions"
+    },
+    "permissions": {
+        "title": "Autorisations",
+        "addPermission": "Ajouter une autorisation",
+        "editPermission": "Modifier une autorisation",
+        "deletePermission": "Supprimer une autorisation",
+        "viewPermission": "Voir une autorisation",
+        "name": "Nom",
+        "actions": "Actions"
+    },
+    "messages": {
+        "welcome": "Bienvenue dans l'application!",
+        "success": "Opération réussie!",
+        "error": "Une erreur s'est produite. Veuillez réessayer.",
+        "info": "Ceci est un message d'information."
+    },
+    "placeholders": {
+        "search": "Rechercher...",
+        "searchUser": "Rechercher un utilisateur...",
+        "name": "Entrer le nom",
+        "email": "Entrer l'e-mail",
+        "password": "Entrer le mot de passe",
+        "confirmPassword": "Confirmer le mot de passe",
+        "roleName": "Entrer le nom du rôle",
+        "permissionName": "Entrer le nom de l'autorisation"
+    },
+    "labels": {
+        "search": "Recherche",
+        "name": "Nom",
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "confirmPassword": "Confirmer le mot de passe",
+        "roleName": "Nom du rôle",
+        "permissionName": "Nom de l'autorisation"
+    },
+    "login": {
+        "title": "Connexion",
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "forgotPassword": "Mot de passe oublié?",
+        "noAccount": "Vous n'avez pas de compte?",
+        "signup": "Inscrivez-vous",
+        "login": "Connexion",
+        "rememberMe": "Se souvenir de moi",
+        "orLoginWith": "Ou connectez-vous avec"
+    },
+    "signup": {
+        "title": "Inscription",
+        "name": "Nom",
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "confirmPassword": "Confirmer le mot de passe",
+        "alreadyAccount": "Vous avez déjà un compte?",
+        "registration": "Inscription",
+        "registrationDescription": "Pour commencer avec votre compte, veuillez remplir le formulaire. Nous sommes impatients de vous accueillir à bord !",
+        "aboutYourCompany": "À propos de votre entreprise",
+        "aboutYourCompanyDescription": "Veuillez nous fournir quelques informations sur votre entreprise.",
+        "companyName": "Nom de l'entreprise",
+        "companyWebsite": "Site web de l'entreprise",
+        "companySize": "Taille de l'entreprise",
+        "companyIndustry": "Secteur d'activité de l'entreprise",
+        "login": "Connectez-vous",
+        "registerHere": "Inscrivez-vous ici",
+        "verifyEmailHeader": "Vérifiez votre adresse e-mail",
+        "verifyEmail": "Vérifier l'e-mail",
+        "verifyEmailDescription": "Nous avons envoyé un e-mail de vérification à votre adresse e-mail. Veuillez vérifier votre boîte de réception et suivre les instructions.",
+        "accountCreated": "Compte créé avec succès !",
+        "accountCreatedDescription": "Votre compte a été créé avec succès. Vous pouvez maintenant vous connecter à votre compte."
+    },
+    "forgotPassword": {
+        "title": "Mot de passe oublié",
+        "email": "E-mail",
+        "resetPassword": "Réinitialiser le mot de passe",
+        "rememberPassword": "Vous souvenez-vous du mot de passe? Connectez-vous"
+    },
+    "verifyOTP": {
+        "title": "Vérifier OTP",
+        "otp": "OTP",
+        "verify": "Vérifier",
+        "resend": "Renvoyer OTP",
+        "change": "Changer de numéro",
+        "verifyDescription": "Entrez le code OTP à 6 chiffres envoyé à votre adresse e-mail",
+        "resendDescription": "Vous n'avez pas reçu l'OTP ? Cliquez sur le bouton ci-dessous pour renvoyer.",
+        "spamWarning": "Veuillez vérifier votre dossier spam si vous ne recevez pas l'OTP dans quelques minutes.",
+        "expiryDescription": "Il expirera dans 10 minutes.",
+        "needHelp": "Besoin d'aide ?",
+        "help": "Aide"
+    },
+    "accountNav": {
+        "userManagement": {
+            "title": "Gestion des utilisateurs",
+            "users": "Utilisateurs",
+            "pendingInvitations": "Invitations en attente"
+        },
+        "billing": {
+            "title": "Gestion des rôles",
+            "subscriptions": "Abonnements",
+            "paymentHistory": "Historique des paiements"
+        },
+        "logs": {
+            "title": "Journaux",
+            "activityLogs": "Journaux d'activité"
+        }
+    }
+}

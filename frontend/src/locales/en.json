@@ -1,0 +1,262 @@
+{
+    "tagline": {
+        "welcome": "Seamless Login for Exclusive Access",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum, culpa, magni dolorum necessitatibus vel vitae esse soluta aspernatur laudantium odit ad veritatis. Sint, mollitia!."
+    },
+    "toast": {
+        "successCreate": "Item created successfully!",
+        "successUpdate": "Item updated successfully!",
+        "successDelete": "Item deleted successfully!",
+        "errorCreate": "Failed to create item. Please try again later.",
+        "errorUpdate": "Failed to update item. Please try again later.",
+        "errorDelete": "Failed to delete item. Please try again later.",
+        "errorLoad": "Failed to load data. Please try again later.",
+        "networkError": "Network error. Please check your connection.",
+        "actionSuccess": "Action completed successfully!",
+        "actionFailure": "Action failed. Please try again later."
+    },
+    "dialog": {
+        "deleteConfirmation": "Are you sure you want to delete this item?",
+        "unsavedChanges": "You have unsaved changes. Do you want to leave this page?",
+        "logoutConfirmation": "Are you sure you want to log out?",
+        "genericWarning": "Are you sure you want to proceed with this action?",
+        "saveChanges": "Do you want to save your changes before leaving?",
+        "overwriteWarning": "This action will overwrite the existing data. Do you wish to continue?"
+    },
+    "auth": {
+        "loginSuccess": "Logged in successfully!",
+        "loginFailure": "Failed to log in. Please check your credentials and try again.",
+        "logoutSuccess": "Logged out successfully!",
+        "signupSuccess": "Account created successfully!",
+        "signupFailure": "Failed to create account. Please try again later.",
+        "passwordResetSuccess": "Password reset successfully!",
+        "passwordResetFailure": "Failed to reset password. Please try again later.",
+        "unauthorizedAccess": "You are not authorized to access this resource.",
+        "sessionExpired": "Your session has expired. Please log in again.",
+        "accountLocked": "Your account has been locked. Please contact support."
+    },
+    "form": {
+        "fieldRequired": "This field is required.",
+        "invalidEmail": "Please enter a valid email address.",
+        "passwordMismatch": "Passwords do not match.",
+        "minLength": "This field requires at least {min} characters.",
+        "maxLength": "This field allows a maximum of {max} characters.",
+        "submitSuccess": "Form submitted successfully!",
+        "submitFailure": "Failed to submit the form. Please try again."
+    },
+    "file": {
+        "uploadSuccess": "File uploaded successfully!",
+        "uploadFailure": "Failed to upload file. Please try again.",
+        "invalidFileType": "Invalid file type. Please upload a valid file.",
+        "fileTooLarge": "File size exceeds the maximum limit.",
+        "deleteFileConfirmation": "Are you sure you want to delete this file?"
+    },
+    "notification": {
+        "newMessage": "You have a new message.",
+        "updateAvailable": "A new update is available. Please refresh the page.",
+        "maintenance": "The system is under maintenance. Please try again later.",
+        "actionRequired": "Action required: {action}",
+        "reminder": "Reminder: {task}"
+    },
+    "error": {
+        "404": "The requested resource could not be found.",
+        "500": "An unexpected error occurred. Please try again later.",
+        "timeout": "The request timed out. Please try again later.",
+        "generic": "An error occurred. Please try again.",
+        "validation": "Some fields are invalid. Please check and try again."
+    },
+    "buttons": {
+        "ok": "OK",
+        "cancel": "Cancel",
+        "yes": "Yes",
+        "no": "No",
+        "confirm": "Confirm",
+        "submit": "Submit",
+        "save": "Save",
+        "delete": "Delete",
+        "upload": "Upload",
+        "close": "Close",
+        "logout": "Log out",
+        "login": "Log in",
+        "signup": "Sign up",
+        "reset": "Reset",
+        "back": "Back",
+        "next": "Next",
+        "finish": "Finish",
+        "inviteUsers": "Invite Users"
+    },
+    "menu": {
+        "home": "Home",
+        "dashboard": "Dashboard",
+        "settings": "Settings",
+        "profile": "Profile",
+        "users": "Users",
+        "roles": "Roles",
+        "permissions": "Permissions",
+        "logout": "Log out"
+    },
+    "pages": {
+        "home": "Home",
+        "dashboard": "Dashboard",
+        "settings": "Settings",
+        "profile": "Profile",
+        "users": "Users",
+        "roles": "Roles",
+        "permissions": "Permissions"
+    },
+    "profile": {
+        "title": "Profile",
+        "name": "Name",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "updateProfile": "Update Profile",
+        "changePassword": "Change Password"
+    },
+    "users": {
+        "title": "Users",
+        "addUser": "Add User",
+        "editUser": "Edit User",
+        "deleteUser": "Delete User",
+        "viewUser": "View User",
+        "firstName": "First Name",
+        "middleName": "Middle Name",
+        "lastName": "Last Name",
+        "suffix": "Suffix", 
+        "contactNumber": "Contact Number",
+        "accountName": "Account Name",
+        "email": "Email",
+        "role": "Role",
+        "status": "Status",
+        "active": "Active",
+        "inactive": "Inactive",
+        "actions": "Actions",
+        "verified": "Verified",
+        "lastLogin": "Last Login",
+        "lastUpdated": "Last Updated",
+        "createdOn": "Created On",
+        "verifiedOn": "Verified On",
+        "inviteUsers": "Invite Users",
+        "dateInvited": "Date Invited",
+        "personalInfo": "Personal Information"
+    },
+    "roles": {
+        "title": "Roles",
+        "addRole": "Add Role",
+        "editRole": "Edit Role",
+        "deleteRole": "Delete Role",
+        "viewRole": "View Role",
+        "name": "Name",
+        "permissions": "Permissions",
+        "actions": "Actions"
+    },
+    "permissions": {
+        "title": "Permissions",
+        "addPermission": "Add Permission",
+        "editPermission": "Edit Permission",
+        "deletePermission": "Delete Permission",
+        "viewPermission": "View Permission",
+        "name": "Name",
+        "actions": "Actions"
+    },
+    "messages": {
+        "welcome": "Welcome to the app!",
+        "success": "Operation was successful!",
+        "error": "Something went wrong. Please try again.",
+        "info": "Just an information message."
+    },
+    "placeholders": {
+        "search": "Search...",
+        "searchUser": "Search user...",
+        "name": "Enter name",
+        "email": "Enter email",
+        "password": "Enter password",
+        "confirmPassword": "Confirm password",
+        "roleName": "Enter role name",
+        "permissionName": "Enter permission name"
+    },
+    "labels": {
+        "search": "Search",
+        "name": "Name",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "roleName": "Role Name",
+        "permissionName": "Permission Name"
+    },
+    "login": {
+        "title": "Sign in",
+        "login": "Log in",
+        "email": "Email",
+        "password": "Password",
+        "forgotPassword": "Forgot your password?",
+        "noAccount": "Don't have an account?",
+        "signup": "Sign up",
+        "rememberMe": "Remember me"
+    },
+    "signup": {
+        "title": "Sign up",
+        "name": "Name",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "alreadyAccount": "Already have an account?",
+        "registration": "Registration",
+        "registrationDescription": "To get started with your account, please fill out the form. We look forward to having you on board!",
+        "aboutYourCompany": "About your company",
+        "aboutYourCompanyDescription": "Please provide us with some information about your company.",
+        "companyName": "Company Name",
+        "companyPosition": "Company Position",
+        "companyWebsite": "Company Website",
+        "companySize": "Company Size",
+        "companyIndustry": "Company Industry",
+        "agree": "I agree to the terms and conditions",
+        "terms": "Terms and Conditions",
+        "privacy": "Privacy Policy",
+        "registerHere": "Register here",
+        "verifyEmailHeader": "Verify your email address",
+        "verifyEmail": "Verify Email",
+        "verifyEmailDescription": "Please check your email and click on the verification link to activate your account.",
+        "accountCreated": "Account created successfully!",
+        "accountCreatedDescription": "Your account has been created successfully. You can now log in to your account."
+    },
+    "forgotPassword": {
+        "title": "Forgot password",
+        "email": "Email",
+        "resetPassword": "Reset password",
+        "rememberPassword": "Remember your password? Log in"
+    },
+    "verifyOTP": {
+        "title": "Verify OTP",
+        "otp": "OTP",
+        "verify": "Verify",
+        "resend": "Resend OTP",
+        "change": "Change number",
+        "verifyDescription": "Enter the 6-digit OTP sent to your email address",
+        "resendDescription": "Didn't receive the OTP? Click on the button below to resend.",
+        "spamWarning": "Please check your spam folder if you do not receive the OTP within a few minutes.",
+        "expiryDescription": "It will expire in 10 minutes.",
+        "needHelp": "Need help?",
+        "help": "Help"
+    },
+    "accountNav": {
+        "userManagement": {
+            "title": "Account Management",
+            "users": "Users",
+            "pendingInvitations": "Pending Invitations"
+        },
+        "billing": {
+            "title": "Billing & Subscriptions",
+            "subscriptions": "Subscriptions",
+            "paymentHistory": "Payment History"
+        },
+        "logs": {
+            "title": "Logs",
+            "activityLogs": "Activity Logs"
+        }
+    },
+    "notificationsPreferences": {
+        "title": "Notifications Preferences",
+        "subtitle": "Manage account notifications and preferences"
+    }
+}

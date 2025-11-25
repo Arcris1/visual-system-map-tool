@@ -1,0 +1,253 @@
+{
+    "tagline": {
+        "welcome": "シームレスなログインで限定アクセス",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum, culpa, magni dolorum necessitatibus vel vitae esse soluta aspernatur laudantium odit ad veritatis. Sint, mollitia!."
+    },
+    "toast": {
+        "successCreate": "アイテムが正常に作成されました！",
+        "successUpdate": "アイテムが正常に更新されました！",
+        "successDelete": "アイテムが正常に削除されました！",
+        "errorCreate": "アイテムの作成に失敗しました。後でもう一度お試しください。",
+        "errorUpdate": "アイテムの更新に失敗しました。後でもう一度お試しください。",
+        "errorDelete": "アイテムの削除に失敗しました。後でもう一度お試しください。",
+        "errorLoad": "データの読み込みに失敗しました。後でもう一度お試しください。",
+        "networkError": "ネットワークエラーです。接続を確認してください。",
+        "actionSuccess": "操作が正常に完了しました！",
+        "actionFailure": "操作に失敗しました。後でもう一度お試しください。"
+    },
+    "dialog": {
+        "deleteConfirmation": "このアイテムを削除してもよろしいですか？",
+        "unsavedChanges": "保存されていない変更があります。このページを離れますか？",
+        "logoutConfirmation": "ログアウトしてもよろしいですか？",
+        "genericWarning": "この操作を実行してもよろしいですか？",
+        "saveChanges": "変更を保存してから離れますか？",
+        "overwriteWarning": "この操作は既存のデータを上書きします。続行しますか？"
+    },
+    "auth": {
+        "loginSuccess": "正常にログインしました！",
+        "loginFailure": "ログインに失敗しました。認証情報を確認して、再試行してください。",
+        "logoutSuccess": "正常にログアウトしました！",
+        "signupSuccess": "アカウントが正常に作成されました！",
+        "signupFailure": "アカウントの作成に失敗しました。後でもう一度お試しください。",
+        "passwordResetSuccess": "パスワードが正常にリセットされました！",
+        "passwordResetFailure": "パスワードのリセットに失敗しました。後でもう一度お試しください。",
+        "unauthorizedAccess": "このリソースにアクセスする権限がありません。",
+        "sessionExpired": "セッションの有効期限が切れました。再度ログインしてください。",
+        "accountLocked": "アカウントがロックされています。サポートにお問い合わせください。"
+    },
+    "form": {
+        "fieldRequired": "このフィールドは必須です。",
+        "invalidEmail": "有効なメールアドレスを入力してください。",
+        "passwordMismatch": "パスワードが一致しません。",
+        "minLength": "このフィールドは少なくとも{min}文字が必要です。",
+        "maxLength": "このフィールドは最大{max}文字まで入力できます。",
+        "submitSuccess": "フォームが正常に送信されました！",
+        "submitFailure": "フォームの送信に失敗しました。後でもう一度お試しください。"
+    },
+    "file": {
+        "uploadSuccess": "ファイルが正常にアップロードされました！",
+        "uploadFailure": "ファイルのアップロードに失敗しました。後でもう一度お試しください。",
+        "invalidFileType": "無効なファイルタイプです。有効なファイルをアップロードしてください。",
+        "fileTooLarge": "ファイルサイズが最大制限を超えています。",
+        "deleteFileConfirmation": "このファイルを削除してもよろしいですか？"
+    },
+    "notification": {
+        "newMessage": "新しいメッセージがあります。",
+        "updateAvailable": "新しい更新があります。ページをリフレッシュしてください。",
+        "maintenance": "システムはメンテナンス中です。後でもう一度お試しください。",
+        "actionRequired": "必要なアクション: {action}",
+        "reminder": "リマインダー: {task}"
+    },
+    "error": {
+        "404": "リクエストされたリソースが見つかりませんでした。",
+        "500": "予期しないエラーが発生しました。後でもう一度お試しください。",
+        "timeout": "リクエストがタイムアウトしました。後でもう一度お試しください。",
+        "generic": "エラーが発生しました。もう一度お試しください。",
+        "validation": "いくつかのフィールドが無効です。確認して再試行してください。"
+    }, 
+    "buttons": {
+        "ok": "OK",
+        "cancel": "キャンセル",
+        "yes": "はい",
+        "no": "いいえ",
+        "confirm": "確認",
+        "submit": "送信",
+        "save": "保存",
+        "delete": "削除",
+        "upload": "アップロード",
+        "close": "閉じる",
+        "logout": "ログアウト",
+        "login": "ログイン",
+        "signup": "サインアップ",
+        "reset": "リセット",
+        "back": "戻る",
+        "next": "次へ",
+        "finish": "完了",
+        "inviteUsers": "ユーザーを招待"
+    },
+    "menu": {
+        "home": "ホーム",
+        "dashboard": "ダッシュボード",
+        "settings": "設定",
+        "profile": "プロフィール",
+        "users": "ユーザー",
+        "roles": "ロール",
+        "permissions": "権限",
+        "logout": "ログアウト"
+    },
+    "pages": {
+        "home": "ホーム",
+        "dashboard": "ダッシュボード",
+        "settings": "設定",
+        "profile": "プロフィール",
+        "users": "ユーザー",
+        "roles": "ロール",
+        "permissions": "権限"
+    },
+    "profile": {
+        "title": "プロフィール",
+        "name": "名前",
+        "email": "メールアドレス",
+        "password": "パスワード",
+        "confirmPassword": "パスワードを確認",
+        "updateProfile": "プロフィールを更新",
+        "changePassword": "パスワードを変更"
+    },
+    "users": {
+        "title": "ユーザー",
+        "addUser": "ユーザーを追加",
+        "editUser": "ユーザーを編集",
+        "deleteUser": "ユーザーを削除",
+        "viewUser": "ユーザーを表示",
+        "firstName": "名",
+        "lastName": "姓",
+        "contactNumber": "連絡先番号",
+        "email": "メールアドレス",
+        "role": "ロール",
+        "status": "ステータス",
+        "active": "アクティブ",
+        "inactive": "非アクティブ",
+        "actions": "アクション",
+        "accountName": "アカウント名",
+        "verified": "確認済み",
+        "lastLogin": "最終ログイン",
+        "lastUpdated": "最終更新",
+        "createdOn": "作成日",
+        "verifiedOn": "確認日",
+        "inviteUsers": "ユーザーを招待",
+        "dateInvited": "招待日"
+    },
+    "roles": {
+        "title": "ロール",
+        "addRole": "ロールを追加",
+        "editRole": "ロールを編集",
+        "deleteRole": "ロールを削除",
+        "viewRole": "ロールを表示",
+        "name": "名前",
+        "permissions": "権限",
+        "actions": "アクション"
+    },
+    "permissions": {
+        "title": "権限",
+        "addPermission": "権限を追加",
+        "editPermission": "権限を編集",
+        "deletePermission": "権限を削除",
+        "viewPermission": "権限を表示",
+        "name": "名前",
+        "actions": "アクション"
+    },
+    "messages": {
+        "welcome": "アプリへようこそ！",
+        "success": "操作が成功しました！",
+        "error": "エラーが発生しました。再試行してください。",
+        "info": "これは情報メッセージです。"
+    },
+    "placeholders": {
+        "search": "検索...",
+        "searchUser": "ユーザーを検索...",
+        "name": "名前を入力",
+        "email": "メールアドレスを入力",
+        "password": "パスワードを入力",
+        "confirmPassword": "パスワードを確認",
+        "roleName": "ロール名を入力",
+        "permissionName": "権限名を入力"
+    },
+    "labels": {
+        "search": "検索",
+        "name": "名前",
+        "email": "メールアドレス",
+        "password": "パスワード",
+        "confirmPassword": "パスワードを確認",
+        "roleName": "ロール名",
+        "permissionName": "権限名"
+    },
+    "login": {
+        "title": "ログイン",
+        "email": "メールアドレス",
+        "password": "パスワード",
+        "forgotPassword": "パスワードを忘れましたか？",
+        "noAccount": "アカウントをお持ちでないですか？",
+        "signup": "サインアップ",
+        "login": "ログイン",
+        "rememberMe": "私を覚えてますか"
+    },
+    "signup": {
+        "title": "サインアップ",
+        "name": "名前",
+        "email": "メールアドレス",
+        "password": "パスワード",
+        "confirmPassword": "パスワードを確認",
+        "alreadyAccount": "すでにアカウントをお持ちですか？",
+        "registration": "登録",
+        "registrationDescription": "アカウントを開始するには、フォームに記入してください。ご参加をお待ちしております！",
+        "aboutYourCompany": "会社について",
+        "aboutYourCompanyDescription": "会社に関する情報を提供してください。",
+        "companyName": "会社名",
+        "companyWebsite": "会社のウェブサイト",
+        "companySize": "会社の規模",
+        "companyIndustry": "会社の業界",
+        "login": "ログイン",
+        "signup": "サインアップ",
+        "registerHere": "こちらで登録",
+        "verifyEmailHeader": "メールアドレスを確認",
+        "verifyEmail": "メールを確認",
+        "verifyEmailDescription": "メールアドレスに確認メールを送信しました。受信トレイを確認し、指示に従って操作してください。",
+        "accountCreated": "アカウントが正常に作成されました！",
+        "accountCreatedDescription": "アカウントが正常に作成されました。アカウントにログインできます。"
+    },
+    "forgotPassword": {
+        "title": "パスワードを忘れた",
+        "email": "メールアドレス",
+        "resetPassword": "パスワードをリセット",
+        "rememberPassword": "パスワードを覚えていますか？ログイン"
+    },
+    "verifyOTP": {
+        "title": "OTPを確認",
+        "otp": "OTP",
+        "verify": "確認",
+        "resend": "OTPを再送信",
+        "change": "番号を変更",
+        "verifyDescription": "メールアドレスに送信された6桁のOTPを入力してください",
+        "resendDescription": "OTPを受信していませんか？下のボタンをクリックして再送信してください。",
+        "spamWarning": "数分以内にOTPを受信しない場合は、迷惑メールフォルダを確認してください。",
+        "expiryDescription": "10分で期限切れになります。",
+        "needHelp": "助けが必要ですか？",
+        "help": "ヘルプ"
+    },
+    "accountNav": {
+        "userManagement": {
+            "title": "ユーザー管理",
+            "users": "ユーザー",
+            "pendingInvitations": "保留中の招待"
+        },
+        "billing": {
+            "title": "ロール管理",
+            "subscriptions": "サブスクリプション",
+            "paymentHistory": "支払い履歴"
+        },
+        "logs": {
+            "title": "ログ",
+            "activityLogs": "アクティビティログ"
+        }
+    }
+}

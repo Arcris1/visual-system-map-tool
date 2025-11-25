@@ -1,0 +1,259 @@
+{
+    "tagline": {
+        "welcome": "Seamless Login para sa Eksklusibong Access",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum, culpa, magni dolorum necessitatibus vel vitae esse soluta aspernatur laudantium odit ad veritatis. Sint, mollitia!."
+    },
+    "toast": {
+        "successCreate": "Matagumpay na nalikha ang item!",
+        "successUpdate": "Matagumpay na na-update ang item!",
+        "successDelete": "Matagumpay na nabura ang item!",
+        "errorCreate": "Nabigo ang paglikha ng item. Pakisubukan muli mamaya.",
+        "errorUpdate": "Nabigo ang pag-update ng item. Pakisubukan muli mamaya.",
+        "errorDelete": "Nabigo ang pagbura ng item. Pakisubukan muli mamaya.",
+        "errorLoad": "Nabigo ang pag-load ng data. Pakisubukan muli mamaya.",
+        "networkError": "May error sa network. Pakisuri ang iyong koneksyon.",
+        "actionSuccess": "Matagumpay na natapos ang aksyon!",
+        "actionFailure": "Nabigo ang aksyon. Pakisubukan muli mamaya."
+    },
+    "dialog": {
+        "deleteConfirmation": "Sigurado ka bang nais mong burahin ang item na ito?",
+        "unsavedChanges": "Mayroon kang hindi nai-save na mga pagbabago. Nais mo bang umalis sa pahinang ito?",
+        "logoutConfirmation": "Sigurado ka bang nais mong mag-logout?",
+        "genericWarning": "Sigurado ka bang nais mong ipagpatuloy ang aksyong ito?",
+        "saveChanges": "Nais mo bang i-save ang iyong mga pagbabago bago umalis?",
+        "overwriteWarning": "Ang aksyong ito ay papalit sa umiiral na data. Nais mo bang magpatuloy?"
+    },
+    "auth": {
+        "loginSuccess": "Matagumpay na naka-login!",
+        "loginFailure": "Nabigo ang pag-login. Pakisuri ang iyong mga kredensyal at subukang muli.",
+        "logoutSuccess": "Matagumpay na naka-logout!",
+        "signupSuccess": "Matagumpay na nalikha ang account!",
+        "signupFailure": "Nabigo ang paglikha ng account. Pakisubukan muli mamaya.",
+        "passwordResetSuccess": "Matagumpay na na-reset ang password!",
+        "passwordResetFailure": "Nabigo ang pag-reset ng password. Pakisubukan muli mamaya.",
+        "unauthorizedAccess": "Wala kang pahintulot na i-access ang resource na ito.",
+        "sessionExpired": "Nag-expire na ang iyong session. Pakilogin muli.",
+        "accountLocked": "Ang iyong account ay naka-lock. Pakikontak ang support."
+    },
+    "form": {
+        "fieldRequired": "Kinakailangan ang field na ito.",
+        "invalidEmail": "Pakilagay ng wastong email address.",
+        "passwordMismatch": "Hindi magkatugma ang mga password.",
+        "minLength": "Ang field na ito ay nangangailangan ng hindi bababa sa {min} na mga karakter.",
+        "maxLength": "Ang field na ito ay tumatanggap ng hanggang {max} na mga karakter lamang.",
+        "submitSuccess": "Matagumpay na naipasa ang form!",
+        "submitFailure": "Nabigo ang pagpapasa ng form. Pakisubukan muli."
+    },
+    "file": {
+        "uploadSuccess": "Matagumpay na na-upload ang file!",
+        "uploadFailure": "Nabigo ang pag-upload ng file. Pakisubukan muli.",
+        "invalidFileType": "Di-wastong uri ng file. Pakimag-upload ng wastong file.",
+        "fileTooLarge": "Ang laki ng file ay lumampas sa pinapayagang limitasyon.",
+        "deleteFileConfirmation": "Sigurado ka bang nais mong burahin ang file na ito?"
+    },
+    "notification": {
+        "newMessage": "Mayroon kang bagong mensahe.",
+        "updateAvailable": "May bagong update na magagamit. Pakirefresh ang pahina.",
+        "maintenance": "Ang sistema ay kasalukuyang nasa maintenance. Pakisubukan muli mamaya.",
+        "actionRequired": "Kinakailangang aksyon: {action}",
+        "reminder": "Paalala: {task}"
+    },
+    "error": {
+        "404": "Hindi matagpuan ang hiniling na resource.",
+        "500": "Nagkaroon ng hindi inaasahang error. Pakisubukan muli mamaya.",
+        "timeout": "Nag-timeout ang kahilingan. Pakisubukan muli mamaya.",
+        "generic": "Nagkaroon ng error. Pakisubukan muli.",
+        "validation": "May ilang fields na hindi wasto. Pakisuri at subukang muli."
+    },
+    "buttons": {
+        "ok": "OK",
+        "cancel": "Kanselahin",
+        "yes": "Oo",
+        "no": "Hindi",
+        "confirm": "Kumpirmahin",
+        "submit": "Ipasa",
+        "save": "I-save",
+        "delete": "Tanggalin",
+        "upload": "I-upload",
+        "close": "Isara",
+        "logout": "Mag-logout",
+        "login": "Mag-login",
+        "signup": "Mag-sign up",
+        "reset": "I-reset",
+        "back": "Bumalik",
+        "next": "Susunod",
+        "finish": "Tapusin",
+        "inviteUsers": "Mag-imbita ng mga User"
+    },
+    "menu": {
+        "home": "Home",
+        "dashboard": "Dashboard",
+        "settings": "Mga Setting",
+        "profile": "Profile",
+        "users": "Mga User",
+        "roles": "Mga Role",
+        "permissions": "Mga Pahintulot",
+        "logout": "Mag-logout"
+    },
+    "pages": {
+        "home": "Home",
+        "dashboard": "Dashboard",
+        "settings": "Mga Setting",
+        "profile": "Profile",
+        "users": "Mga User",
+        "roles": "Mga Role",
+        "permissions": "Mga Pahintulot"
+    },
+    "profile": {
+        "title": "Profile",
+        "name": "Pangalan",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Kumpirmahin ang Password",
+        "updateProfile": "I-update ang Profile",
+        "changePassword": "Palitan ang Password"
+    },
+    "users": {
+        "title": "Mga User",
+        "addUser": "Magdagdag ng User",
+        "editUser": "I-edit ang User",
+        "deleteUser": "Tanggalin ang User",
+        "viewUser": "Tingnan ang User",
+        "firstName": "Pangalan",
+        "lastName": "Apelyido",
+        "contactNumber": "Numero ng Contact",
+        "email": "Email",
+        "role": "Role",
+        "status": "Status",
+        "active": "Aktibo",
+        "inactive": "Hindi Aktibo",
+        "actions": "Mga Aksyon",
+        "accountName": "Pangalan ng Account",
+        "verified": "Naka-verify",
+        "lastLogin": "Huling Pag-login",
+        "lastUpdated": "Huling In-update",
+        "createdOn": "Nilikha noong",
+        "verifiedOn": "Naka-verify noong",
+        "inviteUsers": "Mag-imbita ng mga User",
+        "dateInvited": "Petsa ng Imbitasyon",
+        "personalInfo": "Personal na Impormasyon"
+    },
+    "roles": {
+        "title": "Mga Role",
+        "addRole": "Magdagdag ng Role",
+        "editRole": "I-edit ang Role",
+        "deleteRole": "Tanggalin ang Role",
+        "viewRole": "Tingnan ang Role",
+        "name": "Pangalan",
+        "permissions": "Mga Pahintulot",
+        "actions": "Mga Aksyon"
+    },
+    "permissions": {
+        "title": "Mga Pahintulot",
+        "addPermission": "Magdagdag ng Pahintulot",
+        "editPermission": "I-edit ang Pahintulot",
+        "deletePermission": "Tanggalin ang Pahintulot",
+        "viewPermission": "Tingnan ang Pahintulot",
+        "name": "Pangalan",
+        "actions": "Mga Aksyon"
+    },
+    "messages": {
+        "welcome": "Maligayang pagdating sa app!",
+        "success": "Matagumpay ang operasyon!",
+        "error": "May nangyaring mali. Pakisubukang muli.",
+        "info": "Ito ay isang mensahe ng impormasyon."
+    },
+    "placeholders": {
+        "search": "Maghanap...",
+        "searchUser": "Maghanap ng user...",
+        "name": "Ilagay ang pangalan",
+        "email": "Ilagay ang email",
+        "password": "Ilagay ang password",
+        "confirmPassword": "Kumpirmahin ang password",
+        "roleName": "Ilagay ang pangalan ng role",
+        "permissionName": "Ilagay ang pangalan ng pahintulot"
+    },
+    "labels": {
+        "search": "Hanapin",
+        "name": "Pangalan",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Kumpirmahin ang Password",
+        "roleName": "Pangalan ng Role",
+        "permissionName": "Pangalan ng Pahintulot"
+    },
+    "login": {
+        "title": "Mag-login",
+        "email": "Email",
+        "password": "Password",
+        "forgotPassword": "Nakalimutan ang password?",
+        "noAccount": "Wala ka pang account?",
+        "signup": "Mag-sign up",
+        "login": "Mag-login",
+        "rememberMe": "Tandaan ako",
+        "orLoginWith": "O mag-login gamit ang"
+    },
+    "signup": {
+        "title": "Mag-sign up",
+        "name": "Pangalan",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Kumpirmahin ang Password",
+        "alreadyAccount": "May account ka na?",
+        "registration": "Rehistrasyon",
+        "registrationDescription": "Upang makapagsimula sa iyong account, pakipunan ang form. Inaasahan naming makasama ka!",
+        "aboutYourCompany": "Tungkol sa iyong kumpanya",
+        "aboutYourCompanyDescription": "Pakibigay sa amin ang ilang impormasyon tungkol sa iyong kumpanya.",
+        "companyName": "Pangalan ng Kumpanya",
+        "companyWebsite": "Website ng Kumpanya",
+        "companySize": "Laki ng Kumpanya",
+        "companyIndustry": "Industriya ng Kumpanya",
+        "login": "Mag-login",
+        "agree": "Sumasang-ayon ako sa mga terms and conditions",
+        "registerHere": "Mag-register dito",
+        "verifyEmailHeader": "I-verify ang iyong email address",
+        "verifyEmail": "I-verify ang Email",
+        "verifyEmailDescription": "Pakisuri ang iyong email at i-click ang verification link upang i-activate ang iyong account",
+        "accountCreated": "Matagumpay na nalikha ang account!",
+        "accountCreatedDescription": "Matagumpay na nalikha ang iyong account. Maaari ka nang mag-login sa iyong account."
+    },
+    "forgotPassword": {
+        "title": "Nakalimutan ang Password",
+        "email": "Email",
+        "resetPassword": "I-reset ang Password",
+        "rememberPassword": "Naalala ang password? Mag-login"
+    },
+    "verifyOTP": {
+        "title": "I-verify ang OTP",
+        "otp": "OTP",
+        "verify": "I-verify",
+        "resend": "Ipadala muli ang OTP",
+        "change": "Palitan ang numero",
+        "verifyDescription": "Ilagay ang 6-digit OTP na ipinadala sa iyong email address",
+        "resendDescription": "Hindi natanggap ang OTP? I-click ang button sa ibaba upang ipadala muli.",
+        "spamWarning": "Pakisuri ang iyong spam folder kung hindi mo natanggap ang OTP sa loob ng ilang minuto.",
+        "expiryDescription": "Mag-e-expire ito sa loob ng 10 minuto.",
+        "needHelp": "Kailangan ng tulong?",
+        "help": "Tulong"
+    },
+    "accountNav": {
+        "userManagement": {
+            "title": "Pamamahala ng User",
+            "users": "Mga User",
+            "pendingInvitations": "Nakahilerang Imbitasyon"
+        },
+        "billing": {
+            "title": "Pamamahala ng Papel",
+            "subscriptions": "Mga Subscription",
+            "paymentHistory": "Kasaysayan ng Bayad"
+        },
+        "logs": {
+            "title": "Mga Log",
+            "activityLogs": "Mga Log ng Aktibidad"
+        }
+    },
+    "notificationsPreferences": {
+        "title": "Mga Notipikasyon at Preferences",
+        "subtitle": "Piliin ang mga notipikasyon at preferences na nais mong matanggap"
+    }
+}
