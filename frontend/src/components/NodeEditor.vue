@@ -488,7 +488,7 @@
                       class="w-full px-3 py-3 text-sm border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 font-mono bg-gray-50 resize-y min-h-[200px]"
                     ></textarea>
                     <!-- Format Buttons -->
-                    <div class="flex gap-2 mt-2">
+                    <div class="flex flex-wrap gap-2 mt-2">
                       <button 
                         v-if="payload.contentType === 'application/json'"
                         @click="formatJSON(payload)"
@@ -497,10 +497,19 @@
                         ✨ Format JSON
                       </button>
                       <button 
-                        @click="copyToClipboard(payload.example)"
-                        class="px-3 py-1.5 text-xs font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 rounded-lg border border-gray-300 transition-colors"
+                        @click="copyToClipboard(payload.example, `edit-${index}`)"
+                        class="flex items-center gap-1 px-3 py-1.5 text-xs font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 rounded-lg border border-gray-300 transition-colors"
                       >
-                        📋 Copy
+                        <Copy class="w-3.5 h-3.5" />
+                        {{ copyFeedback === `edit-${index}` ? 'Copied!' : 'Copy' }}
+                      </button>
+                      <button 
+                        v-if="payload.example"
+                        @click="openFullscreenPayload(payload, index)"
+                        class="flex items-center gap-1 px-3 py-1.5 text-xs font-medium bg-purple-50 text-purple-700 hover:bg-purple-100 rounded-lg border border-purple-200 transition-colors"
+                      >
+                        <Maximize2 class="w-3.5 h-3.5" />
+                        Fullscreen
                       </button>
                       <button 
                         @click="payload.example = ''"
@@ -512,8 +521,28 @@
                   </div>
 
                   <!-- Preview Mode -->
-                  <div v-else class="bg-gray-900 rounded-lg p-4 overflow-auto max-h-[400px]">
-                    <pre class="text-sm text-green-400 font-mono whitespace-pre-wrap">{{ payload.example }}</pre>
+                  <div v-else class="relative">
+                    <!-- Preview Toolbar -->
+                    <div class="absolute top-2 right-2 flex gap-1 z-10">
+                      <button
+                        @click="copyToClipboard(payload.example, `preview-${index}`)"
+                        class="p-1.5 bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white rounded transition-colors"
+                        :title="copyFeedback === `preview-${index}` ? 'Copied!' : 'Copy to clipboard'"
+                      >
+                        <Copy v-if="copyFeedback !== `preview-${index}`" class="w-4 h-4" />
+                        <span v-else class="text-xs text-green-400">✓</span>
+                      </button>
+                      <button
+                        @click="openFullscreenPayload(payload, index)"
+                        class="p-1.5 bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white rounded transition-colors"
+                        title="Open fullscreen"
+                      >
+                        <Maximize2 class="w-4 h-4" />
+                      </button>
+                    </div>
+                    <div class="bg-gray-900 rounded-lg p-4 overflow-auto max-h-[400px]">
+                      <pre class="text-sm text-green-400 font-mono whitespace-pre-wrap">{{ payload.example }}</pre>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -613,12 +642,75 @@
         </button>
       </div>
     </div>
+
+    <!-- Fullscreen Payload Modal -->
+    <Teleport to="body">
+      <div 
+        v-if="fullscreenPayload" 
+        class="fullscreen-payload-modal"
+        @keydown.escape="closeFullscreenPayload"
+      >
+        <!-- Backdrop -->
+        <div class="fullscreen-backdrop" @click="closeFullscreenPayload"></div>
+        
+        <!-- Modal Content -->
+        <div class="fullscreen-content">
+          <!-- Header -->
+          <div class="fullscreen-header">
+            <div class="flex items-center gap-3">
+              <h3 class="text-lg font-semibold text-white">
+                Payload {{ fullscreenPayloadIndex + 1 }}
+              </h3>
+              <span 
+                v-if="fullscreenPayload.direction"
+                class="px-2 py-0.5 text-xs font-medium rounded-full"
+                :class="{
+                  'bg-blue-500/20 text-blue-300': fullscreenPayload.direction === 'incoming',
+                  'bg-green-500/20 text-green-300': fullscreenPayload.direction === 'outgoing'
+                }"
+              >
+                {{ fullscreenPayload.direction === 'incoming' ? '↓ Incoming' : '↑ Outgoing' }}
+              </span>
+              <span v-if="fullscreenPayload.contentType" class="text-sm text-gray-400">
+                {{ fullscreenPayload.contentType }}
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-sm text-gray-400">
+                {{ fullscreenPayload.example?.length || 0 }} characters
+              </span>
+              <button
+                @click="copyToClipboard(fullscreenPayload.example, 'fullscreen')"
+                class="flex items-center gap-2 px-3 py-1.5 bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white rounded-lg transition-colors"
+                :title="copyFeedback === 'fullscreen' ? 'Copied!' : 'Copy to clipboard'"
+              >
+                <Copy v-if="copyFeedback !== 'fullscreen'" class="w-4 h-4" />
+                <span v-else class="text-green-400">✓</span>
+                <span class="text-sm">{{ copyFeedback === 'fullscreen' ? 'Copied!' : 'Copy' }}</span>
+              </button>
+              <button
+                @click="closeFullscreenPayload"
+                class="p-2 hover:bg-gray-700 text-gray-400 hover:text-white rounded-lg transition-colors"
+                title="Exit fullscreen (Esc)"
+              >
+                <Minimize2 class="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+          
+          <!-- Code Preview -->
+          <div class="fullscreen-code">
+            <pre class="text-sm text-green-400 font-mono whitespace-pre-wrap leading-relaxed">{{ fullscreenPayload.example }}</pre>
+          </div>
+        </div>
+      </div>
+    </Teleport>
   </div>
 </template>
 
 <script setup>
 import { ref, watch, reactive } from 'vue'
-import { X, Plus, Trash2, ChevronRight } from 'lucide-vue-next'
+import { X, Plus, Trash2, ChevronRight, Maximize2, Copy, Minimize2 } from 'lucide-vue-next'
 
 // Props
 const props = defineProps({
@@ -786,11 +878,33 @@ const formatJSON = (payload) => {
   }
 }
 
-// Copy to clipboard
-const copyToClipboard = async (text) => {
+// Fullscreen payload state
+const fullscreenPayload = ref(null)
+const fullscreenPayloadIndex = ref(null)
+const copyFeedback = ref(null)
+
+// Open fullscreen payload preview
+const openFullscreenPayload = (payload, index) => {
+  fullscreenPayload.value = payload
+  fullscreenPayloadIndex.value = index
+}
+
+// Close fullscreen payload preview
+const closeFullscreenPayload = () => {
+  fullscreenPayload.value = null
+  fullscreenPayloadIndex.value = null
+}
+
+// Copy to clipboard with visual feedback
+const copyToClipboard = async (text, feedbackId = null) => {
   try {
     await navigator.clipboard.writeText(text)
-    alert('✅ Copied to clipboard!')
+    if (feedbackId) {
+      copyFeedback.value = feedbackId
+      setTimeout(() => {
+        copyFeedback.value = null
+      }, 2000)
+    }
   } catch (err) {
     // Fallback for older browsers
     const textarea = document.createElement('textarea')
@@ -801,7 +915,12 @@ const copyToClipboard = async (text) => {
     textarea.select()
     document.execCommand('copy')
     document.body.removeChild(textarea)
-    alert('✅ Copied to clipboard!')
+    if (feedbackId) {
+      copyFeedback.value = feedbackId
+      setTimeout(() => {
+        copyFeedback.value = null
+      }, 2000)
+    }
   }
 }
 
@@ -904,5 +1023,76 @@ const handleDelete = () => {
 
 .editor-content::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* Fullscreen Payload Modal */
+.fullscreen-payload-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullscreen-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+}
+
+.fullscreen-content {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  max-width: 1400px;
+  background: #1a1a2e;
+  border-radius: 16px;
+  border: 1px solid #374151;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.fullscreen-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #374151;
+  background: #0f0f1a;
+  flex-shrink: 0;
+}
+
+.fullscreen-code {
+  flex: 1;
+  overflow: auto;
+  padding: 1.5rem;
+  background: #1a1a2e;
+}
+
+.fullscreen-code::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.fullscreen-code::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+.fullscreen-code::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 5px;
+}
+
+.fullscreen-code::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+.fullscreen-code pre {
+  margin: 0;
+  tab-size: 2;
 }
 </style>
